@@ -1,0 +1,17 @@
+/* adaptable.css — diseño responsivo (móvil primero en los puntos de quiebre) */
+@media (max-width: 900px) {
+  .hero-grid, .featured-interview { grid-template-columns: 1fr; }
+  .hero-visual { max-width: 520px; }
+}
+@media (max-width: 760px) {
+  .menu-toggle { display: inline-flex; margin-left: auto; }
+  .nav-links { display: none; flex-basis: 100%; flex-direction: column; order: 5; }
+  .nav-links.open { display: flex; }
+  .nav-actions { flex-basis: 100%; }
+  .field-row { flex-direction: column; }
+  .section { padding: 36px 0; }
+}
+@media (max-width: 480px) {
+  .cat-grid { grid-template-columns: 1fr 1fr; gap: 12px !important; }
+  .stat-row { gap: 18px; }
+}

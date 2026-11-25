@@ -1,0 +1,14 @@
+/* formularios.css — login, registro y formulario de productos */
+.form-card, .add-form { display: flex; flex-direction: column; gap: 14px; }
+.add-form { margin-bottom: 24px; padding: 20px; border: 1px solid var(--line); border-radius: 18px; background: var(--bg-1); }
+.field { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0; }
+.field label { font-size: 14px; color: var(--text-1); }
+.field input, .field select, .field textarea { padding: 10px 12px; color: var(--text-0); background: var(--bg-2); border: 1px solid var(--line-strong); border-radius: 10px; width: 100%; }
+.field select option { background: var(--bg-1); }
+.field-row { display: flex; gap: 14px; }
+.field-error { min-height: 1em; font-size: 12.5px; color: var(--danger); }
+.form-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.role-toggle { display: flex; gap: 8px; border: 0; flex-wrap: wrap; }
+.role-btn { padding: 8px 16px; border: 1px solid var(--line-strong); background: transparent; font-size: 14px; }
+.swap-link { margin: 0; text-align: center; font-size: 14px; color: var(--text-1); }
+.swap-link a { color: var(--gold); text-decoration: underline; }

@@ -1,0 +1,13 @@
+/* variables.css — paleta y medidas globales */
+:root {
+  --bg-0: #080b14; --bg-1: #0e1322; --bg-2: #151b2e;
+  --text-0: #f4f1ea; --text-1: #b9bfd0; --text-2: #7d869e;
+  --line: rgba(255,255,255,.08); --line-strong: rgba(255,255,255,.16);
+  --gold: #e8a33d; --gold-dim: rgba(232,163,61,.16);
+  --teal: #2fbfae; --teal-dim: rgba(47,191,174,.16);
+  --danger: #e0674f;
+  --radius: 14px;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-head: "Space Grotesk", var(--font-body);
+  --serif-voice: "Fraunces", Georgia, serif;
+}
