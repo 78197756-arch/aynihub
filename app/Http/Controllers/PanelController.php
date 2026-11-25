@@ -14,9 +14,9 @@ class PanelController extends Controller
     public function resumen(): JsonResponse
     {
         return response()->json([
-            'users'    => User::query()->selectRaw('role, COUNT(*) AS total')->groupBy('role')->pluck('total', 'role'),
+            'users'    => User::query()->selectRaw('role, COUNT(*) AS total')->groupBy('role')->pluck('total', 'role')->map(fn ($v) => (int) $v),
             'products' => Product::count(),
-            'orders'   => Order::query()->selectRaw('status, COUNT(*) AS total')->groupBy('status')->pluck('total', 'status'),
+            'orders'   => Order::query()->selectRaw('status, COUNT(*) AS total')->groupBy('status')->pluck('total', 'status')->map(fn ($v) => (int) $v),
             'revenue'  => (float) Order::where('status', '!=', 'cancelado')->sum('total'),
         ]);
     }
